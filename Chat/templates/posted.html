@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Posted Page{% endblock %}
+
+{% block h1 %}送信されました{% endblock %}
+
+{% block body %}
+<div><a href= "../">トップページに戻る</a></div>
+
+    <div>あなたの名前は"{{name}}"です</div>
+    <div>あなたのメールアドレスは"{{ email }}"です</div>
+    <div>コメント内容は"{{comment}}"です</div>
+{% endblock %}

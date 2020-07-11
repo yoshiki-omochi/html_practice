@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Postのページ{% endblock %}
+
+{% block h1 %}投稿ページのトップ{% endblock %}
+
+{% block body%}
+<form action = "" method = "Post">
+{% csrf_token %}
+    <table>{{form1.as_p}}
+    <button type="submit">送信</button>
+    </table>
+</form>
+{% endblock %}

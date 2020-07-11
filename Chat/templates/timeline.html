@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}timeline{% endblock %}
+
+{% block h1 %}タイムライン{% endblock %}
+
+{% block body %}
+上が最新情報です
+<div><a href= "../">トップページに戻る</a></div>
+
+{% for i in data%}
+
+    {{message}}
+    {{i.name}}
+    {{i.email}}
+    {{i.comment}}
+    <p>aaaaaa</p>
+    
+
+{% endfor %}
+タイトル
+{% endblock %}
