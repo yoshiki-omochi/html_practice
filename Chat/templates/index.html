@@ -2,12 +2,42 @@
 
 {% load static %}
 
-{% block title %}トップページ{% endblock %}
+<!--タイトルのブロック-->
+{% block title %}
+トップページ
+{% endblock %}
 
-{% block h1%}掲示板サイトのトップ{% endblock %}
+
+<!--H1の内容を示す-->
+{% block h1%}
+<!--文字の色を青に変えるだけの装飾-->
+<font color="blue">掲示板サイトのトップ</font>
+{% endblock %}
 
 {% block body%}
-<div><a href= "./post">投稿ページだよ</div>
+<p>ただのHTMLを書くための練習です。</p>
+<table border="1" cellpadding="30">
+    <tr><!--trタグは、テーブルロウであり、横部分を指定してくれる-->
+        <td bgcolor="red"><font color="white">赤 red</td>
+        <td bgcolor="white"><font color="blue">白 whte</td>
+    </tr>
+	<tr>
+        <td bgcolor="yellow"><font size=5 color="white">黄 yellow</font></td>
+        <td bgcolor="black"><font color="white">黒 black</td><!--インライン要素であるfontは終了タグを省略できる-->
+    </tr>
+	<tr>
+        <td bgcolor="blue">青 blue</td>
+        <td bgcolor="orange">オレンジ orange</td>
+    </tr>
+</table>
 
-<div><a href= "./timeline">みんなの投稿</div>
+<p>この下からが掲示板のページになります。</p>
+
+<table border="5" cellpadding="20">
+<tr>
+    <td><a href= "./post">投稿ページだよ</td>
+    <td><a href= "./timeline">みんなの投稿</td>
+</tr>
+</table>
+
 {% endblock%}

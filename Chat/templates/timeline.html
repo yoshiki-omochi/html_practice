@@ -7,8 +7,16 @@
 {% block h1 %}タイムライン{% endblock %}
 
 {% block body %}
-上が最新情報です
-<div><a href= "../">トップページに戻る</a></div>
+
+<table border="1" cellpadding="30">
+<tr>
+    <td>上が最新情報です</td>
+    <td><a href= "../">トップページに戻る</a></td>
+</tr>
+</table>
+
+
+<p style="text-align:center"><font size="5" color="orange">ここからが書き込み内容です。</font></p>
 
 {% for i in data%}
 
@@ -16,9 +24,9 @@
     {{i.name}}
     {{i.email}}
     {{i.comment}}
-    <p>aaaaaa</p>
     
 
 {% endfor %}
-タイトル
+
+<p style="text-align:center"><font size="5" color="orange">ここまでが書き込み内容です。</font></p>
 {% endblock %}
